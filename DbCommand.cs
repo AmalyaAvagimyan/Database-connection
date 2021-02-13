@@ -21,10 +21,8 @@ namespace DbConnectionApp
         public void Execute()
         {
             DbCon.Open(); 
-            Console.WriteLine("Run the {0} connection", DbCon.ConnectionString);
+            Console.WriteLine(Instruction);
             DbCon.Close();
-
         }
-
     }
 }
